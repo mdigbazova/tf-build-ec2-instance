@@ -1,0 +1,12 @@
+provider "aws" {
+  acces_key  = "ACCESS_KEY_HERE"
+  secret_key = "SECRET_KEY_HERE"
+  region     = "eu-central-1"
+}
+
+resource "aws_instance" "ec2_ha" {
+  ami = "ami-010fae13a16763bb4" //The Amazon Linux AMI is an EBS-backed,
+  //AWS-supported image. The default image includes AWS command line tools, Python, Ruby, Perl, and Java.
+  //The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
+  instance_type = "t2.micro" //free tier
+}
