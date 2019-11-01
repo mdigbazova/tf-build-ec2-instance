@@ -1,16 +1,12 @@
 variable "region" {
   default = "eu-central-1"
 }
-variable "AmiLinux" {
-  type = "map"
-  default = {
-    us-east-1 = "ami-b73b63a0" # Virginia
-    us-west-2 = "ami-5ec1673e" # Oregon
-    eu-west-1 = "ami-9398d3e0" # Ireland
-    us-east-2 = "ami-ea87a78f" # Ohio
-  }
-  description = "I add only 3 regions (Virginia, Oregon, Ireland) to show the map feature but you can add all the regions that you need"
-}
+
+//variable "AmiLinux" {
+//  type = "string"
+//  eu-central-1 = "ami-0f6cc777a107c31e9" # AMI dev2
+//  description = "AMI dev2"
+//}
 /*
 variable "aws_access_key" {
   default = "xxxxx"
@@ -22,7 +18,8 @@ variable "aws_secret_key" {
   description = "the user aws secret key"
 }
 */
-variable "credentialsfile" {
-  default = "/Users/giuseppe/.aws/credentials" #replace your home directory
-  description = "where your access and secret_key are stored, you create the file when you run the aws config"
-}
+
+//variable "credentialsfile" {
+//  default = "/home/sysadmin/.aws/credentials" #replace your home directory
+//  description = "where access and secret_key are stored, the file is created when run the aws config"
+//}
