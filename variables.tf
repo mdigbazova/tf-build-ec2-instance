@@ -24,7 +24,7 @@ variable "aws_secret_key" {
 //  description = "where access and secret_key are stored, the file is created when run the aws config"
 //}
 
-variable subscription_id {}
-variable client_id {}
-variable client_secret {}
-variable tenant_id {}
+//variable subscription_id {}
+//variable client_id {}
+//variable client_secret {}
+//variable tenant_id {}
