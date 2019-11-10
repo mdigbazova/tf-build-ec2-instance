@@ -23,3 +23,8 @@ variable "aws_secret_key" {
 //  default = "/home/sysadmin/.aws/credentials" #replace your home directory
 //  description = "where access and secret_key are stored, the file is created when run the aws config"
 //}
+
+variable subscription_id {}
+variable client_id {}
+variable client_secret {}
+variable tenant_id {}
