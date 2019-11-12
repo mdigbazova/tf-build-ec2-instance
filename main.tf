@@ -82,7 +82,6 @@ resource "aws_security_group" "subnetsecurity" {
 # ------------------------------------------------------------------------------
 
 locals {
-  vpc_name = "terraform-aws-vpc-test-2"
   tags = {
     SYSTEM                = "Mery"
     OWNER                 = "Mery"
@@ -91,16 +90,6 @@ locals {
     MANAGED_BY            = "Terraform"
   }
 }
-
-//locals {
-//  tags = {
-//    SYSTEM                = "DigiToll"
-//    OWNER                 = "HyperAspect"
-//    ENV_NAME              = "${var.environment}"
-//    DESCRIPTION           = "Key to encrypt and decrypt secret parameters in the project DigiToll"
-//    MANAGED_BY            = "Terraform"
-//  }
-//}
 
 
 # ------------------------------------------------------------------------------
@@ -130,7 +119,7 @@ resource "aws_s3_bucket" "mery_terraform_state" {
 //terraform {
 //  backend "s3" {
 //    bucket          = "mery-test-terraform-state"
-//    key             = "davinci-kea/echo"
+//    key             = "digitoll/encr/decr"
 //    region          = "${var.region}"
 //    encrypt         = "true"
 //  }

@@ -30,9 +30,9 @@ data "aws_iam_policy_document" "cmk_key_policy" {
 
 locals {
   tags = {
-    SYSTEM                = "DigiToll"
-    OWNER                 = "HyperAspect"
-    ENV_NAME              = "${var.environment}"
+    SYSTEM                = "Mery"
+    OWNER                 = "Mery"
+    //ENV_NAME              = "${var.environment}"
     DESCRIPTION           = "Key to encrypt and decrypt secret parameters in the project DigiToll"
     MANAGED_BY            = "Terraform"
   }

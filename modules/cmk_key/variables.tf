@@ -18,6 +18,7 @@ variable "deletion_window_in_days" {
 variable "key_policy" {
   description = "The policy of the key usage"
   type        = "string"
+  default     = ""
 }
 
 variable "region" {
